@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    margin: 27px 40px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+
+header {
+    display: flex;
+    background-color: rgb(104, 170, 201);
+    color: white;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.Header {
+    padding: 22px 0px 0px 50px;
+    font-size: 30px;
+}
+
+.Judul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.Container {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(104, 170, 201);
+    margin-left: 500px;
+    margin-top: 200px;
+    border-radius: 2ex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+.container-detail{
+    padding-top: 20px;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+h1 {
+    padding-top: 15px;
+}
+
+body {
+    background-image: url(white_aesthetic_wavy_lines_background_hd_white_aesthetic.jpg);
+}
+
+header nav li {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    font-size: 19px;
+    flex-direction: column;
+    align-items: center;
+}
+header nav li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    transition: .5s;
+}
+
+header nav li:hover::after {
+    content: '';
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}

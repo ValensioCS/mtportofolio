@@ -1,3 +1,104 @@
+@media (max-width:1030px){
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        display: flex;
+        background-color: rgb(104, 170, 201);
+    }
+    .Header {
+        padding: 20px 60px 0px 310px;
+    }
+    li {
+        margin: 20px 91px;
+    }
+    .Content{
+        flex-direction: column-reverse;
+        padding-top: 280px;
+    }
+    .Content img {
+        width: 360px;
+    }.Paragraph {
+        text-align: center;
+        margin-top: 70px;
+        margin-right: 18px;
+    }
+}
+
+
+/*Ipad Air*/
+@media (max-width:900px){
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    .Header {
+        padding: 20px 60px 0px 220px;
+    }
+    li {
+        margin: 20px 58px;
+    }
+    header nav ul {
+        display: flex;
+        background-color: rgb(104, 170, 201);
+    }
+    .Content{
+        flex-direction: column-reverse;
+        padding-top: 280px;
+    }
+    .Content img {
+        width: 360px;
+    }
+    .Paragraph {
+        text-align: center;
+        margin-top: 70px;
+        margin-right: 18px;
+    }
+}
+/*Ipad Air*/
+
+/*Ipad Mini*/
+@media (max-width:800px) {
+    header {
+        flex-direction: column;
+    }
+    .Header {
+        padding: 20px 60px 0px 190px;
+    }
+    li {
+        margin: 20px 58px;
+    }
+    header nav ul {
+        display: flex;
+        background-color: rgb(104, 170, 201);
+    }
+    .Content{
+        flex-direction: column-reverse;
+        padding-top: 280px;
+    }
+    .Content img {
+        width: 360px;
+    }
+    .Paragraph {
+        text-align: center;
+        margin-top: 70px;
+        margin-right: 18px;
+    }
+}
+/*Ipad Mini*/
+
+
 @media (max-width:500px){
     header {
        flex-direction: column;
@@ -12,6 +113,7 @@
     .Paragraph {
         text-align: center;
         margin-bottom: 50px;
+        margin-right: 30px;
     }
     header nav ul {
         display: flex;
@@ -26,3 +128,10 @@
     }
 }  
 
+/*Iphone 12*/
+@media (max-width:400px) {
+    li {
+        margin: 17px 27px;
+    }
+}
+/*Iphone 12*/

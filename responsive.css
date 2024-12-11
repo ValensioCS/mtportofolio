@@ -1,137 +1,220 @@
-@media (max-width:1030px){
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
+/* Default Layout */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Fixed to the Left */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(104, 170, 201);
+    color: white;
+    z-index: 10;
+    width: 200px; /* Default width for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding-top: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.Header {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.Content {
+    margin-left: 200px; /* Space for the navbar */
+    padding-top: 120px;
+}
+
+/* Media Queries */
+
+/* Up to 1030px (Tablet and smaller) */
+@media (max-width: 1030px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Navbar takes full width */
+        height: auto; /* Adjust height */
     }
+
     header nav ul {
         display: flex;
-        background-color: rgb(104, 170, 201);
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 0;
     }
+
     .Header {
-        padding: 20px 60px 0px 310px;
+        padding: 10px;
     }
+
     li {
-        margin: 20px 91px;
+        margin: 0 10px;
     }
-    .Content{
-        flex-direction: column-reverse;
-        padding-top: 280px;
+
+    .Content {
+        margin-left: 0;
+        padding-top: 120px;
     }
+
     .Content img {
-        width: 360px;
-    }.Paragraph {
-        text-align: center;
-        margin-top: 70px;
-        margin-right: 18px;
+        width: 80%; /* Image width adjusts */
     }
 }
 
-
-/*Ipad Air*/
-@media (max-width:900px){
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
+/* Ipad Air (up to 900px) */
+@media (max-width: 900px) {
     header {
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
     }
-    .Header {
-        padding: 20px 60px 0px 220px;
-    }
-    li {
-        margin: 20px 58px;
-    }
+
     header nav ul {
         display: flex;
-        background-color: rgb(104, 170, 201);
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 0;
     }
-    .Content{
-        flex-direction: column-reverse;
-        padding-top: 280px;
+
+    .Content {
+        margin-left: 0;
+        padding-top: 120px;
     }
+
     .Content img {
-        width: 360px;
+        width: 80%; /* Image width adjusts */
     }
-    .Paragraph {
-        text-align: center;
-        margin-top: 70px;
-        margin-right: 18px;
+
+    li {
+        margin: 0 10px;
     }
 }
-/*Ipad Air*/
 
-/*Ipad Mini*/
-@media (max-width:800px) {
+/* Ipad Mini (up to 800px) */
+@media (max-width: 800px) {
     header {
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
     }
-    .Header {
-        padding: 20px 60px 0px 190px;
-    }
-    li {
-        margin: 20px 58px;
-    }
+
     header nav ul {
         display: flex;
-        background-color: rgb(104, 170, 201);
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 0;
     }
-    .Content{
-        flex-direction: column-reverse;
-        padding-top: 280px;
-    }
-    .Content img {
-        width: 360px;
-    }
-    .Paragraph {
-        text-align: center;
-        margin-top: 70px;
-        margin-right: 18px;
-    }
-}
-/*Ipad Mini*/
 
-
-@media (max-width:500px){
-    header {
-       flex-direction: column;
-    }
-    .Content{
-        flex-direction: column;
+    .Content {
+        margin-left: 0;
         padding-top: 100px;
     }
-    .Content img {
-        width: 300px;
-    }
-    .Paragraph {
-        text-align: center;
-        margin-bottom: 50px;
-        margin-right: 30px;
-    }
-    header nav ul {
-        display: flex;
-        background-color: rgb(104, 170, 201);
-    }
-    li {
-        margin: 17px 30px;
-    }
-    .Header {
-        padding: 10px 60px 0px 50px;
-        text-align: center;
-    }
-}  
 
-/*Iphone 12*/
-@media (max-width:400px) {
+    .Content img {
+        width: 80%; /* Image width adjusts */
+    }
+
     li {
-        margin: 17px 27px;
+        margin: 0 10px;
     }
 }
-/*Iphone 12*/
+
+/* Mobile (up to 500px) */
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: auto;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .Content {
+        margin-left: 0;
+        padding-top: 120px;
+    }
+
+    .Content img {
+        width: 70%; /* Image width adjusts */
+    }
+
+    .Header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+/* IPhone 12 (up to 400px) */
+@media (max-width: 400px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Content {
+        margin-left: 0;
+        padding-top: 100px;
+    }
+
+    .Content img {
+        width: 70%;
+    }
+
+    .Header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}

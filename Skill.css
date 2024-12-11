@@ -1,33 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 li {
     list-style-type: none;
-    float: left;
-    margin: 27px 40px;
+    margin: 20px 0;
     font-size: 20px;
 }
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
+    display: block;
+    padding: 10px 20px;
 }
 
-
 header {
-    display: flex;
+    position: fixed; /* Navbar menempel di sisi layar */
+    top: 0;
+    left: 0;
     background-color: rgb(104, 170, 201);
     color: white;
-    width: 100%;
-    height: 80px;
-    justify-content: space-between;
+    height: 100vh; /* Tinggi penuh layar */
+    width: 200px; /* Lebar sidebar */
+    display: flex;
+    flex-direction: column; /* Menyusun item secara vertikal */
+    align-items: center;
+    z-index: 1000; /* Memastikan navbar berada di atas elemen lainnya */
 }
 
 .Header {
-    padding: 22px 0px 0px 50px;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Memastikan link memenuhi lebar sidebar */
+}
+
+nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+body {
+    margin-left: 200px; /* Memberi ruang untuk sidebar */
+    background-image: url(white_aesthetic_wavy_lines_background_hd_white_aesthetic.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .Judul {
@@ -38,40 +77,26 @@ header {
 
 .Container {
     width: 800px;
-    height: 400px;
+    height: 500px;
     background-color: rgb(104, 170, 201);
-    margin-left: 29%;
-    margin-top: 200px;
+    margin: 200px auto; /* Membuat elemen ini berada di tengah secara horizontal */
     border-radius: 2ex;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.container-detail{
-    padding-top: 20px;
+.container-detail {
     font-size: 40px;
-    align-items: center;
-    justify-content: center;
-    padding-right: 25px;
+    padding-top: 20px;
 }
 
 h1 {
     padding-top: 15px;
 }
 
-body {
-    background-image: url(white_aesthetic_wavy_lines_background_hd_white_aesthetic.jpg);
-}
-
-header nav li {
-    list-style: none;
-    color: #ffffff;
-    display: flex;
-    font-size: 19px;
-    flex-direction: column;
-    align-items: center;
-}
 header nav li::after {
     content: '';
     width: 0%;
@@ -83,5 +108,5 @@ header nav li:hover::after {
     content: '';
     width: 70%;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 10px;
 }

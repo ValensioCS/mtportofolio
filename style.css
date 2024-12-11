@@ -1,74 +1,93 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-li {
+header li {
     list-style-type: none;
-    float: left;
-    margin: 27px 40px;
+    margin: 20px 0;
     font-size: 20px;
 }
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
+    display: block;
+    padding: 10px 20px;
 }
 
 header {
-    display: flex;
+    position: fixed; 
+    top: 0;
+    left: 0;
     background-color: rgb(104, 170, 201);
     color: white;
-    width: 100%;
-    height: 80px;
-    justify-content: space-between;
+    height: 100vh; 
+    width: 200px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .Header {
-    padding: 22px 0px 0px 50px;
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 body {
+    margin-left: 200px; 
     background-image: url(white_aesthetic_wavy_lines_background_hd_white_aesthetic.jpg);
-}
-
-h1 {
-    padding-left: 30px;
-    font-size: 50px;
-}
-
-h2 {
-    padding-left: 30px;
-    font-size: 30px;
-    font-weight: 400;
-}
-
-p {
-    padding-left: 30px;
-    font-size: 20px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .Content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding-top: 250px;
+    height: 100vh; 
+    text-align: center;
+    padding: 20px;
+}
+
+.Content h1, 
+.Content h2, 
+.Content p {
+    margin-right: 30px; 
 }
 
 .Content img {
     border-radius: 5ex;
+    max-width: 60%; 
+    margin-left: 20px; 
 }
 
-header nav li {
-    list-style: none;
-    color: #ffffff;
-    display: flex;
-    font-size: 19px;
-    flex-direction: column;
-    align-items: center;
-}
 header nav li::after {
     content: '';
     width: 0%;
@@ -80,5 +99,5 @@ header nav li:hover::after {
     content: '';
     width: 70%;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 10px;
 }
